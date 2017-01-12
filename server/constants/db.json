@@ -1,3 +1,4 @@
 {
-  "mongodb": "mongodb://ddaian:nuarePAROLA@ds159328.mlab.com:59328/worldpath"
+  "mongodb": "mongodb://ddaian:nuarePAROLA@ds159328.mlab.com:59328/worldpath",
+  "mongodblocal": "mongodb://ddaian:nuarePAROLA@ds159328.mlab.com:59328/worldpath"
 }

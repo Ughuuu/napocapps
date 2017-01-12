@@ -12,4 +12,3 @@ var StaticDispatcher = (function () {
     return StaticDispatcher;
 }());
 exports.StaticDispatcher = StaticDispatcher;
-//# sourceMappingURL=index.js.map
