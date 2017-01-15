@@ -8,4 +8,5 @@ gulp.task(tasks.CLIENT_JS_DIST, () => {
   return gulp.src(JS, {base: path.DIST})
              .pipe(uglify())
              .pipe(gulp.dest(path.DIST));
-});
+})
+.on('error', console.log);

@@ -17,4 +17,3 @@ class AuthLocal {
     }
 }
 exports.AuthLocal = AuthLocal;
-//# sourceMappingURL=index.js.map
