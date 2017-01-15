@@ -1,1 +1,43 @@
-"use strict";function _classCallCheck(e,o){if(!(e instanceof o))throw new TypeError("Cannot call a class as a function")}var _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},__decorate=function(e,o,r,t){var n,a=arguments.length,p=a<3?o:null===t?t=Object.getOwnPropertyDescriptor(o,r):t;if("object"===("undefined"==typeof Reflect?"undefined":_typeof(Reflect))&&"function"==typeof Reflect.decorate)p=Reflect.decorate(e,o,r,t);else for(var l=e.length-1;l>=0;l--)(n=e[l])&&(p=(a<3?n(p):a>3?n(o,r,p):n(o,r))||p);return a>3&&p&&Object.defineProperty(o,r,p),p},core_1=require("@angular/core"),flex_layout_1=require("@angular/flex-layout"),http_1=require("@angular/http"),forms_1=require("@angular/forms"),platform_browser_1=require("@angular/platform-browser");require("hammerjs");var material_1=require("@angular/material"),app_component_1=require("./gem/components/app.component"),navbar_component_1=require("./gem/components/navbar.component"),plugin_service_1=require("./gem/services/plugin.service"),AppModule=function e(){_classCallCheck(this,e)};AppModule=__decorate([core_1.NgModule({imports:[platform_browser_1.BrowserModule,forms_1.FormsModule,http_1.HttpModule,material_1.MaterialModule.forRoot(),flex_layout_1.FlexLayoutModule.forRoot()],providers:[plugin_service_1.PluginService,platform_browser_1.Title],declarations:[app_component_1.AppComponent,navbar_component_1.NavbarComponent],bootstrap:[app_component_1.AppComponent]})],AppModule),exports.AppModule=AppModule;
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+const core_1 = require("@angular/core");
+const flex_layout_1 = require("@angular/flex-layout");
+const http_1 = require("@angular/http");
+const forms_1 = require("@angular/forms");
+const platform_browser_1 = require("@angular/platform-browser");
+require("hammerjs");
+const material_1 = require("@angular/material");
+const app_component_1 = require("./gem/components/app.component");
+const navbar_component_1 = require("./gem/components/navbar.component");
+// Services
+const plugin_service_1 = require("./gem/services/plugin.service");
+let AppModule = class AppModule {
+};
+AppModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            platform_browser_1.BrowserModule,
+            forms_1.FormsModule,
+            http_1.HttpModule,
+            material_1.MaterialModule.forRoot(),
+            flex_layout_1.FlexLayoutModule.forRoot()
+        ],
+        providers: [
+            plugin_service_1.PluginService,
+            platform_browser_1.Title
+        ],
+        declarations: [
+            app_component_1.AppComponent,
+            navbar_component_1.NavbarComponent
+        ],
+        bootstrap: [
+            app_component_1.AppComponent
+        ],
+    })
+], AppModule);
+exports.AppModule = AppModule;
