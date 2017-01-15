@@ -4,8 +4,7 @@ import {tasks} from './const';
 
 gulp.task(tasks.CLIENT_BUILD_DEV, [
   tasks.CLIENT_BUILD_TS
-])
-.on('error', console.log);
+]);
 
 gulp.task(tasks.CLIENT_BUILD_DIST, () => {
   return new Promise((resolve, reject) => {
@@ -17,11 +16,10 @@ gulp.task(tasks.CLIENT_BUILD_DIST, () => {
               tasks.CLIENT_VIEWS_DIST,
               [
                 tasks.CLIENT_IMAGE_DIST,
-                //tasks.CLIENT_JS_DIST
+                tasks.CLIENT_JS_DIST
               ],
               
               resolve
             );  
   });  
-})
-.on('error', console.log);
+});
