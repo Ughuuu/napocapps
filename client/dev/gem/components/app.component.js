@@ -11,10 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 const core_1 = require("@angular/core");
 const platform_browser_1 = require("@angular/platform-browser");
 const navbar_component_1 = require("./navbar.component");
+const game_component_1 = require("./game.component");
 let AppComponent = class AppComponent {
     constructor(titleService) {
         this.titleService = titleService;
-        this.titleService.setTitle("GemLibs: Plugin Search");
+        this.titleService.setTitle("Napocapps");
     }
     setTitle(newTitle) {
         this.titleService.setTitle(newTitle);
@@ -24,7 +25,7 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'app',
         templateUrl: 'gem/templates/app.html',
-        entryComponents: [navbar_component_1.NavbarComponent]
+        entryComponents: [navbar_component_1.NavbarComponent, game_component_1.GameComponent]
     }),
     __metadata("design:paramtypes", [platform_browser_1.Title])
 ], AppComponent);

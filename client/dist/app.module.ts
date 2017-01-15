@@ -6,7 +6,7 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import 'hammerjs';
 import { MaterialModule } from '@angular/material';
 // Components
-import { PluginComponent } from './gem/components/plugin.component';
+import { GameComponent } from './gem/components/game.component';
 import { AppComponent } from './gem/components/app.component';
 import { NavbarComponent } from './gem/components/navbar.component';
 
@@ -27,7 +27,8 @@ import { PluginService } from './gem/services/plugin.service';
   ],
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    GameComponent
   ],
   bootstrap: [
     AppComponent

@@ -6,12 +6,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 const core_1 = require("@angular/core");
-let PluginComponent = class PluginComponent {
+let GameComponent = class GameComponent {
 };
-PluginComponent = __decorate([
+GameComponent = __decorate([
     core_1.Component({
-        selector: 'plugin',
-        templateUrl: 'gem/templates/plugin.html'
+        selector: 'game',
+        templateUrl: 'gem/templates/game.html',
+        styleUrls: ['gem/style/general.css']
     })
-], PluginComponent);
-exports.PluginComponent = PluginComponent;
+], GameComponent);
+exports.GameComponent = GameComponent;

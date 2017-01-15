@@ -12,6 +12,8 @@ const forms_1 = require("@angular/forms");
 const platform_browser_1 = require("@angular/platform-browser");
 require("hammerjs");
 const material_1 = require("@angular/material");
+// Components
+const game_component_1 = require("./gem/components/game.component");
 const app_component_1 = require("./gem/components/app.component");
 const navbar_component_1 = require("./gem/components/navbar.component");
 // Services
@@ -33,7 +35,8 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            navbar_component_1.NavbarComponent
+            navbar_component_1.NavbarComponent,
+            game_component_1.GameComponent
         ],
         bootstrap: [
             app_component_1.AppComponent

@@ -1,0 +1,27 @@
+.news-text{
+    width: 300px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    height: 85px;
+    white-space: normal;
+    line-height: 120%;
+    font-size: 12px;
+    padding: 2px;
+}
+
+.news-title{
+    font-size: 140%;
+    word-spacing: 15px;
+}
+
+.under-text{
+}
+
+.general-grid{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0px;
+    background-color: #E8DEC5;
+}

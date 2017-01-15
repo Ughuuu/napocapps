@@ -12,33 +12,30 @@ const core_1 = require("@angular/core");
 const navbar_constants_1 = require("../constants/navbar.constants");
 let NavbarComponent = class NavbarComponent {
     constructor() {
-        this.logo = navbar_constants_1.NavbarConstants.logoPNGSrc;
-        this.logotext = navbar_constants_1.NavbarConstants.homeButton;
+        this.logoSrc = navbar_constants_1.NavbarConstants.logoPNGSrc;
+        this.logotext = navbar_constants_1.NavbarConstants.logotext;
         this.searchbarDefault = navbar_constants_1.NavbarConstants.searchBarDefault;
-        this.install = navbar_constants_1.NavbarConstants.installButton;
-        this.feature = navbar_constants_1.NavbarConstants.featureButton;
         this.signup = navbar_constants_1.NavbarConstants.signupButton;
         this.login = navbar_constants_1.NavbarConstants.loginButton;
+        this.rightText = "";
+        this.leftText = navbar_constants_1.NavbarConstants.leftText;
         this.searchText = "";
-    }
-    HomeAction() {
-    }
-    searchAction() {
-    }
-    installAction() {
-        alert("clickAction");
-    }
-    featuresAction() {
-    }
-    signUpAction() {
-    }
-    logInAction() {
+        var time = new Date();
+        if (time.getHours() > 20 || time.getHours() < 8) {
+            this.rightText = navbar_constants_1.NavbarConstants.lateEditionText;
+        }
+        else {
+            this.rightText = navbar_constants_1.NavbarConstants.earlyEditionText;
+        }
+        console.log(time.getHours());
+        this.rightText += navbar_constants_1.NavbarConstants.rightText;
     }
 };
 NavbarComponent = __decorate([
     core_1.Component({
         selector: 'navbar',
-        templateUrl: 'gem/templates/navbar.html'
+        templateUrl: 'gem/templates/navbar.html',
+        styleUrls: ['gem/style/general.css', 'gem/style/navbar.css']
     }),
     __metadata("design:paramtypes", [])
 ], NavbarComponent);
