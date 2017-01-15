@@ -16,3 +16,4 @@ http.createServer(app)
     .listen(PORT, () => {
     console.log('started running @: ' + os.hostname() + ' on port: ' + PORT + ' with environment: ' + process.env.NODE_ENV);
 });
+//# sourceMappingURL=server.js.map

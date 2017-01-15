@@ -29,3 +29,4 @@ function default_1(orm, db) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = default_1;
 ;
+//# sourceMappingURL=message.model.js.map

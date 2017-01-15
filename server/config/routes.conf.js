@@ -23,3 +23,4 @@ class RoutesConfig {
 }
 exports.RoutesConfig = RoutesConfig;
 ;
+//# sourceMappingURL=routes.conf.js.map
