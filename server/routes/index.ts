@@ -1,18 +1,13 @@
 import * as express from 'express';
-import {TodoRoutes} from '../api/todo/routes/todo-routes';
+import { HomeRoutes } from '../api/gem/routes/home.routes';
 
-import {StaticDispatcher} from '../commons/static/index';
+const root = process.cwd();
 
-
-export class Routes {
-   static init(app: express.Application, router: express.Router) {
-     TodoRoutes.init(router);
-     
-     router
-       .route('*')
-       .get(StaticDispatcher.sendIndex);
-     
-
-     app.use('/', router);
-   }
-}
+export class Router {
+  static init(app: express.Application) {
+    app.get('/*', function (req, res) {
+      res.sendFile(root + '/client/dev/index.html');
+    });
+    HomeRoutes.init(app);
+  }
+};
