@@ -5,11 +5,9 @@ import GemModel from '../api/gem/model/index';
 var orm = require('orm');
 import { DBConstants } from '../constants/db.constants';
 
-const URL = (process.env.NODE_ENV === 'production') ? process.env.MONGOHQ_URL : DBConstants.dbUrl;
-
 export class DBConfig {
   static init(app: express.Application): void {
-    var db = orm.connect(URL, function (err, db) {
+    var db = orm.connect(DBConstants.dbUrl, function (err, db) {
       if (err) throw err;
       GemModel(orm, db);
 

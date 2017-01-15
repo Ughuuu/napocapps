@@ -1,10 +1,10 @@
 "use strict";
 const home_routes_1 = require("../api/gem/routes/home.routes");
-const root = process.cwd();
+const app_constants_1 = require("../constants/app.constants");
 class Router {
     static init(app) {
         app.get('/*', function (req, res) {
-            res.sendFile(root + '/client/dev/index.html');
+            res.sendFile(app_constants_1.AppConstants.root + app_constants_1.AppConstants.clientFiles + 'index.html');
         });
         home_routes_1.HomeRoutes.init(app);
     }

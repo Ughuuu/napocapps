@@ -2,10 +2,9 @@
 const index_1 = require("../api/gem/model/index");
 var orm = require('orm');
 const db_constants_1 = require("../constants/db.constants");
-const URL = (process.env.NODE_ENV === 'production') ? process.env.MONGOHQ_URL : db_constants_1.DBConstants.dbUrl;
 class DBConfig {
     static init(app) {
-        var db = orm.connect(URL, function (err, db) {
+        var db = orm.connect(db_constants_1.DBConstants.dbUrl, function (err, db) {
             if (err)
                 throw err;
             index_1.default(orm, db);
