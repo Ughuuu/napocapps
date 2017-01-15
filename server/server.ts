@@ -6,8 +6,8 @@ if (process.env.NODE_ENV === 'production')
 var PORT = process.env.PORT || 3333;
 
 import * as express from 'express';
-import * as http from 'http';
-import * as os from 'os';
+var http = require('http');
+var os = require('os');
 import { RoutesConfig } from './config/routes.conf';
 import { DBConfig } from './config/db.conf';
 import { Router } from './routes/index';

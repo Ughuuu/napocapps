@@ -5,7 +5,7 @@ import * as morgan from 'morgan';
 import * as bodyParser from 'body-parser';
 import * as helmet from 'helmet';
 import * as compression from 'compression';
-import * as zlib from 'zlib';
+var zlib = require('zlib');
 import { DBConfig } from './db.conf';
 
 export class RoutesConfig {

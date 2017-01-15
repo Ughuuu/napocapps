@@ -1,5 +1,5 @@
 "use strict";
-const moment = require("moment");
+var moment = require('moment');
 function default_1(orm, db) {
     var User = db.define('user', {
         name: { type: 'text', required: true },
@@ -32,3 +32,4 @@ function default_1(orm, db) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = default_1;
 ;
+//# sourceMappingURL=user.model.js.map

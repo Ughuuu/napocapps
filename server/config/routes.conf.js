@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const helmet = require("helmet");
 const compression = require("compression");
-const zlib = require("zlib");
+var zlib = require('zlib');
 class RoutesConfig {
     static init(app) {
         let _root = process.cwd();
@@ -23,3 +23,4 @@ class RoutesConfig {
 }
 exports.RoutesConfig = RoutesConfig;
 ;
+//# sourceMappingURL=routes.conf.js.map
