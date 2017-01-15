@@ -3,12 +3,12 @@
 var dbConst = require('../constants/db.json');
 
 import * as express from 'express';
-var passport = require('passport');
-var flash = require('connect-flash');
+import * as passport from 'passport';
+import flash = require('connect-flash');
 
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var session = require('express-session');
+import * as cookieParser from 'cookie-parser';
+import * as bodyParser from 'body-parser';
+import * as session from 'express-session';
 
 export class AuthLocal {
     static init(app: express.Application) {

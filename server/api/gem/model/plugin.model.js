@@ -1,5 +1,4 @@
 "use strict";
-var moment = require('moment');
 function default_1(orm, db) {
     var Plugin = db.define('plugin', {
         name: { type: 'text', required: true },

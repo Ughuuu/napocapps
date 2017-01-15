@@ -6,10 +6,10 @@ import * as bodyParser from 'body-parser';
 import * as helmet from 'helmet';
 import * as compression from 'compression';
 import * as zlib from 'zlib';
-import {DBConfig} from './db.conf';
+import { DBConfig } from './db.conf';
 
 export class RoutesConfig {
-    static init(app: express.Application):void {
+    static init(app: express.Application): void {
         let _root = process.cwd();
         let _nodeModules = '/node_modules/';
         let _clientFiles = (process.env.NODE_ENV === 'production') ? '/client/dist/' : '/client/dev/';

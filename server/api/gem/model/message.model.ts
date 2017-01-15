@@ -1,6 +1,6 @@
 "use strict";
 
-var moment = require('moment');
+import * as moment from 'moment';
 
 export default function (orm, db) {
   var Models = db.define('message', {

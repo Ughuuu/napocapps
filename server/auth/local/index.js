@@ -1,10 +1,10 @@
 "use strict";
 var dbConst = require('../constants/db.json');
-var passport = require('passport');
-var flash = require('connect-flash');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var session = require('express-session');
+const passport = require("passport");
+const flash = require("connect-flash");
+const cookieParser = require("cookie-parser");
+const bodyParser = require("body-parser");
+const session = require("express-session");
 class AuthLocal {
     static init(app) {
         app.use(cookieParser());

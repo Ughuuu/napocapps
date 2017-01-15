@@ -1,5 +1,5 @@
 "use strict";
-var moment = require('moment');
+const moment = require("moment");
 function default_1(orm, db) {
     var User = db.define('user', {
         name: { type: 'text', required: true },
