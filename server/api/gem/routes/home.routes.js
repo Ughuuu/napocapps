@@ -6,4 +6,3 @@ class HomeRoutes {
 }
 exports.HomeRoutes = HomeRoutes;
 ;
-//# sourceMappingURL=home.routes.js.map
